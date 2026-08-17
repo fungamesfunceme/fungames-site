@@ -53,17 +53,6 @@ const fronts = [
 const games = [
   {
     number: "01",
-    focus: "Alfabetização científica",
-    title: "Jogo da Memória Hídrico",
-    text: "Conhecer conceitos e ampliar o repertório sobre recursos hídricos por meio de associações visuais.",
-    link: links.memory,
-    action: "Acessar o jogo",
-    className: "game-memory",
-    image: assetPath("/images/jogo-memoria-hidrica.png"),
-    imageAlt: "Identidade visual do Jogo da Memória Hídrico",
-  },
-  {
-    number: "02",
     focus: "Educação e planejamento",
     title: "Seca em Jogo",
     text: "Experimentar sistemas, escolhas e consequências ligadas à gestão proativa de secas.",
@@ -74,7 +63,7 @@ const games = [
     imageAlt: "Identidade visual do Seca em Jogo",
   },
   {
-    number: "03",
+    number: "02",
     focus: "Governança territorial",
     title: "Jogada d’Água",
     text: "Negociar interesses, administrar recursos e construir decisões coletivas em um território compartilhado.",
@@ -83,6 +72,17 @@ const games = [
     className: "game-water",
     image: assetPath("/images/jogada-dagua.png"),
     imageAlt: "Tabuleiro do Jogada d’Água",
+  },
+  {
+    number: "03",
+    focus: "Alfabetização científica",
+    title: "Jogo da Memória Hídrico",
+    text: "Conhecer conceitos e ampliar o repertório sobre recursos hídricos por meio de associações visuais.",
+    link: links.memory,
+    action: "Acessar o jogo",
+    className: "game-memory",
+    image: assetPath("/images/jogo-memoria-hidrica.png"),
+    imageAlt: "Identidade visual do Jogo da Memória Hídrico",
   },
 ];
 
