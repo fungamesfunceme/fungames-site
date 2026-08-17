@@ -79,7 +79,7 @@ const games = [
     title: "Jogada d’Água",
     text: "Negociar interesses, administrar recursos e construir decisões coletivas em um território compartilhado.",
     link: links.waterPlay,
-    action: "Conhecer o pacote",
+    action: "Acessar o Jogo",
     className: "game-water",
     image: assetPath("/images/jogada-dagua.png"),
     imageAlt: "Tabuleiro do Jogada d’Água",
