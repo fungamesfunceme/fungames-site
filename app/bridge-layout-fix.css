@@ -1,0 +1,4 @@
+/* Mantém os textos da sequência de experiências com a largura integral da coluna. */
+.experience-flow li {
+  display: block;
+}
