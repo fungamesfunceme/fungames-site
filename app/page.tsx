@@ -75,7 +75,7 @@ const games = [
   },
   {
     number: "03",
-    focus: "Alfabetização científica",
+    focus: "Recurso educativo",
     title: "Jogo da Memória Hídrico",
     text: "Conhecer conceitos e ampliar o repertório sobre recursos hídricos por meio de associações visuais.",
     link: links.memory,
