@@ -1,5 +1,6 @@
 import PhotoGallery from "./PhotoGallery";
 import SiteHeader from "./SiteHeader";
+import { assetPath } from "./asset-path";
 
 const links = {
   games: "https://drive.google.com/drive/folders/1Cvg1NNVR3bfiNxdwrF-RNsE-0HSqx63b",
@@ -58,7 +59,7 @@ const games = [
     link: links.memory,
     action: "Acessar o jogo",
     className: "game-memory",
-    image: "/images/jogo-memoria-hidrica.png",
+    image: assetPath("/images/jogo-memoria-hidrica.png"),
     imageAlt: "Identidade visual do Jogo da Memória Hídrico",
   },
   {
@@ -69,7 +70,7 @@ const games = [
     link: links.drought,
     action: "Conhecer o projeto",
     className: "game-drought",
-    image: "/images/seca-em-jogo.png",
+    image: assetPath("/images/seca-em-jogo.png"),
     imageAlt: "Identidade visual do Seca em Jogo",
   },
   {
@@ -80,7 +81,7 @@ const games = [
     link: links.waterPlay,
     action: "Conhecer o pacote",
     className: "game-water",
-    image: "/images/jogada-dagua.png",
+    image: assetPath("/images/jogada-dagua.png"),
     imageAlt: "Tabuleiro do Jogada d’Água",
   },
 ];
@@ -117,7 +118,7 @@ function BrandLogo({ negative = false }: { negative?: boolean }) {
   return (
     <img
       className="brand-logo"
-      src={negative ? "/brand/fungames-negative.png" : "/brand/fungames-logo.png"}
+      src={assetPath(negative ? "/brand/fungames-negative.png" : "/brand/fungames-logo.png")}
       alt="FUNGames FUNCEME"
       width={negative ? 549 : 1129}
       height={negative ? 187 : 376}
@@ -140,7 +141,7 @@ export default function Home() {
 
             <div className="hero-copy">
               <div className="hero-brandmark" role="img" aria-label="FUNGames FUNCEME">
-                <img className="hero-brand-symbol" src="/brand/fungames-symbol.png" alt="" width={329} height={329} aria-hidden="true" />
+                <img className="hero-brand-symbol" src={assetPath("/brand/fungames-symbol.png")} alt="" width={329} height={329} aria-hidden="true" />
                 <span className="hero-wordmark" aria-hidden="true">
                   <span className="hero-wordmark-name"><strong>FUN</strong><span>Games</span></span>
                   <span className="hero-wordmark-origin">FUNCEME</span>
@@ -332,7 +333,7 @@ export default function Home() {
           <div className="footer-brand"><BrandLogo /><p>Ciência em jogo. Decisões em ação.</p></div>
           <nav aria-label="Documentos e links institucionais">
             <a href={links.contact}>Fale conosco</a>
-            <a href="/docs/FUNGames_Guia_da_Marca.pdf" target="_blank">Guia da marca</a>
+            <a href={assetPath("/docs/FUNGames_Guia_da_Marca.pdf")} target="_blank">Guia da marca</a>
             <a href={links.games} target="_blank" rel="noreferrer">Acervo de jogos</a>
             <a href={links.publications} target="_blank" rel="noreferrer">Publicações</a>
           </nav>

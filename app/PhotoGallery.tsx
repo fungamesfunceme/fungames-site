@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { assetPath } from "./asset-path";
 
 type Photo = {
   src: string;
@@ -13,7 +14,7 @@ type Photo = {
 
 const photos: Photo[] = [
   {
-    src: "/images/seca-escolas-grupo.webp",
+    src: assetPath("/images/seca-escolas-grupo.webp"),
     alt: "Grupo participante da capacitação Seca em Jogo nas Escolas em Sobral",
     caption: "Seca em Jogo nas Escolas · Sobral",
     width: 1536,
@@ -21,21 +22,21 @@ const photos: Photo[] = [
     className: "photo-large",
   },
   {
-    src: "/images/seca-escolas-jogo-2.webp",
+    src: assetPath("/images/seca-escolas-jogo-2.webp"),
     alt: "Participantes dialogam ao redor do tabuleiro Seca em Jogo",
     caption: "Experimentação e reflexão coletiva",
     width: 1280,
     height: 960,
   },
   {
-    src: "/images/seca-escolas-jogo-1.webp",
+    src: assetPath("/images/seca-escolas-jogo-1.webp"),
     alt: "Facilitadores acompanham uma rodada do Seca em Jogo",
     caption: "Aprendizagem por meio da experiência",
     width: 1280,
     height: 960,
   },
   {
-    src: "/images/planos-seca-formacao-1.webp",
+    src: assetPath("/images/planos-seca-formacao-1.webp"),
     alt: "Encontro de formação para Planos de Gestão Proativa de Seca",
     caption: "Planos de Gestão Proativa de Seca",
     width: 1536,
@@ -43,7 +44,7 @@ const photos: Photo[] = [
     className: "photo-wide",
   },
   {
-    src: "/images/planos-seca-formacao-2.webp",
+    src: assetPath("/images/planos-seca-formacao-2.webp"),
     alt: "Construção colaborativa de referências para planos de seca",
     caption: "Construção interdisciplinar",
     width: 1536,

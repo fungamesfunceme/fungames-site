@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { assetPath } from "./asset-path";
 
 const navigationItems = [
   { id: "iniciativa", label: "Iniciativa" },
@@ -60,7 +61,7 @@ export default function SiteHeader() {
     <header className="site-header">
       <div className="nav-shell">
         <a className="header-brand" href="#inicio" aria-label="FUNGames - início">
-          <img className="brand-logo" src="/brand/fungames-logo.png" alt="FUNGames FUNCEME" width={1129} height={376} />
+          <img className="brand-logo" src={assetPath("/brand/fungames-logo.png")} alt="FUNGames FUNCEME" width={1129} height={376} />
         </a>
         <nav className="desktop-nav" aria-label="Navegação principal">
           {navigationItems.map((item) => (

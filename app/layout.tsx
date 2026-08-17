@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { assetPath } from "./asset-path";
 
 export const metadata: Metadata = {
   title: "FUNGames | FUNCEME",
@@ -16,9 +17,9 @@ export const metadata: Metadata = {
   ],
   other: { "codex-preview": "development" },
   icons: {
-    icon: "/brand/fungames-symbol.png",
-    shortcut: "/brand/fungames-symbol.png",
-    apple: "/brand/fungames-symbol.png",
+    icon: assetPath("/brand/fungames-symbol.png"),
+    shortcut: assetPath("/brand/fungames-symbol.png"),
+    apple: assetPath("/brand/fungames-symbol.png"),
   },
 };
 
