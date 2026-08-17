@@ -1,6 +1,7 @@
 import PhotoGallery from "./PhotoGallery";
 import SiteHeader from "./SiteHeader";
 import { assetPath } from "./asset-path";
+import ContactForm from "./ContactForm";
 
 const links = {
   games: "https://drive.google.com/drive/folders/1Cvg1NNVR3bfiNxdwrF-RNsE-0HSqx63b",
@@ -323,7 +324,7 @@ export default function Home() {
                 <a className="button button-ghost-white" href={links.funceme} target="_blank" rel="noreferrer">Conheça a FUNCEME <ExternalMark /></a>
               </div>
             </div>
-            <div className="collaborate-brand"><BrandLogo negative /><p>Conheça. Participe. Colabore.</p></div>
+            <ContactForm />
           </div>
         </section>
       </main>
